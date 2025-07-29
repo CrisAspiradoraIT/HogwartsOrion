@@ -47,7 +47,7 @@ function formatText() {
 // Actualizar automáticamente el contador al escribir
 document.getElementById('inputText').addEventListener('input', () => {
   const inputText = document.getElementById('inputText').value;
-  document.getElementById('blockLinesText').innerText = `Bloques de 35 caracteres: ${contarBloques(inputText)}`;
+  document.getElementById('blockLinesText').innerText = `Lineas totales: ${contarBloques(inputText)}`;
 });
 
 // Botón pegar del portapapeles
@@ -56,7 +56,7 @@ document.getElementById('pegarBtn').addEventListener('click', async () => {
     const texto = await navigator.clipboard.readText();
     if (texto) {
       document.getElementById('inputText').value = texto;
-      document.getElementById('blockLinesText').innerText = `Bloques de 35 caracteres: ${contarBloques(texto)}`;
+      document.getElementById('blockLinesText').innerText = `Lineas totales: ${contarBloques(texto)}`;
     } else {
       alert('No se encontró texto en el portapapeles.');
     }
