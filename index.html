@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Hogwarts Orion</title>
+  <title>Hogwarts Orion - Contador de Líneas</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Fuente tipo Harry Potter (Harry P) de Google Fonts, alternativa -->
   <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <div class="container">
     <h1>Hogwarts Orion</h1>
-  </header>
-  <main>
-    <label for="textArea">Pega tu texto aquí:</label>
-    <textarea id="textArea" rows="8" placeholder="Escribe o pega tu texto..."></textarea>
-    <div class="contador">
-      <span>Líneas (35 caracteres c/u): </span>
-      <span id="lineCount">0</span>
+    <h2>Contador de Líneas de 35 caracteres</h2>
+    <textarea id="inputText" placeholder="Pega o escribe tu texto aquí..."></textarea>
+    <div class="counts">
+      <span id="blockLinesText">Bloques de 35 caracteres: 0</span>
     </div>
-  </main>
-  <footer>
-    <small>Hecho con magia 🪄</small>
-  </footer>
+    <div class="buttons">
+      <button onclick="formatText()">Formatear en bloques de 35</button>
+      <button id="pegarBtn">Pegar del Portapapeles</button>
+    </div>
+    <h2>Texto Formateado:</h2>
+    <div id="outputText" class="output-container"></div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2025 Hogwarts Orion 🪄</p>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
