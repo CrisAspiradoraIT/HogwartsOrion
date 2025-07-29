@@ -1,0 +1,84 @@
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
+body {
+  background: radial-gradient(ellipse at center, #2d1a08 0%, #0e0a05 100%);
+  color: #ffd700;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #1a1206;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  border-bottom: 3px solid #ffd700;
+  box-shadow: 0 2px 8px #0006;
+}
+
+h1 {
+  font-family: 'Harry Potter', 'Georgia', serif;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ad7c15, 2px 2px 2px #000a;
+}
+
+main {
+  flex: 1;
+  max-width: 500px;
+  margin: 2rem auto;
+  background: rgba(30, 20, 10, 0.85);
+  border: 2px solid #ad7c15;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 24px #000b;
+  padding: 2rem 2rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #ffeb90;
+  margin-bottom: 0.3rem;
+  font-family: 'Georgia', serif;
+}
+
+textarea {
+  width: 100%;
+  border: 2px solid #ffd700;
+  border-radius: 0.7rem;
+  font-size: 1.1rem;
+  padding: 1rem;
+  background: #221406;
+  color: #ffd700;
+  font-family: 'Georgia', serif;
+  resize: vertical;
+  box-shadow: 0 2px 12px #0005;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+textarea:focus {
+  border-color: #ffb300;
+  box-shadow: 0 0 8px #ffd70080;
+}
+
+.contador {
+  font-size: 1.2rem;
+  color: #ffeb90;
+  font-family: 'Harry Potter', 'Georgia', serif;
+  letter-spacing: 1px;
+  text-shadow: 0 0 4px #ad7c15;
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem 0 0.5rem 0;
+  font-size: 1rem;
+  color: #ad7c15;
+  font-family: 'Georgia', serif;
+  text-shadow: 0 0 3px #0006;
+}
