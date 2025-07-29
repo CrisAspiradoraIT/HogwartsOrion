@@ -1,12 +1,11 @@
-// Cuenta líneas según bloques de 35 caracteres
+// Cuenta líneas reales, según saltos de línea en el textarea
 const textarea = document.getElementById('textArea');
 const lineCount = document.getElementById('lineCount');
 
-function contarLineas(texto, charsPorLinea = 35) {
-  // Quita saltos de línea, cuenta solo caracteres
-  const chars = texto.replace(/\r?\n/g, '');
-  if (chars.length === 0) return 0;
-  return Math.ceil(chars.length / charsPorLinea);
+function contarLineas(texto) {
+  if (texto.length === 0) return 0;
+  // Divide por saltos de línea y cuenta los fragmentos resultantes
+  return texto.split(/\r\n|\r|\n/).length;
 }
 
 textarea.addEventListener('input', () => {
