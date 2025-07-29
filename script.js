@@ -41,7 +41,7 @@ function formatText() {
     div.appendChild(textSpan);
     outputDiv.appendChild(div);
   });
-  document.getElementById('blockLinesText').innerText = `Bloques de 35 caracteres: ${bloques.length}`;
+  document.getElementById('blockLinesText').innerText = `Cantidad de lineas: ${bloques.length}`;
 }
 
 // Actualizar automáticamente el contador al escribir
