@@ -24,7 +24,7 @@ function formatText() {
   outputDiv.innerHTML = '';
   if (!inputText.trim()) {
     outputDiv.innerHTML = '<p style="color: #777; text-align: center;">Por favor, ingresa algún texto para formatear.</p>';
-    document.getElementById('blockLinesText').innerText = `Bloques de 35 caracteres: 0`;
+    document.getElementById('blockLinesText').innerText = `Lineas totales: 0`;
     return;
   }
   const bloques = dividirEnBloques(inputText);
