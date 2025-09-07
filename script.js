@@ -1,6 +1,6 @@
 // Hogwarts Orion - Contador de líneas de 35 caracteres
 
-const LINESIZE = 35;
+const LINESIZE = 32;
 
 function contarBloques(text) {
   // Quita todos los saltos de línea para contar solo por caracteres
